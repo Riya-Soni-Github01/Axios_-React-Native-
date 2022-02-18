@@ -16,6 +16,7 @@ const App = (props) => {
       .then((response) => {
         let v = response.data["data"]
         console.log('all data', v)
+        console.log('IN LOCAL BRANCH')
         setData(v)
       })
       .catch((error) => console.log(error));
